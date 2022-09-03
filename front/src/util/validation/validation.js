@@ -5,12 +5,9 @@ const validation = (values) => {
     switch (name) {
       case "title":
       case "detail":
-        result[name] = validateLength(value, 5);
-        break;
-
       case "university":
       case "major":
-        result[name] = validateLength(value, 4);
+        result[name] = validateLength(value, 5);
         break;
 
       case "name":
@@ -64,7 +61,9 @@ const validateEmail = (email) => {
 
 const validatePassword = (password) => {
   if (password.includes(" ")) return false;
-  const checkPassword = password.match(/^[A-Za-z0-9]{4,12}$/);
+  const checkPassword = password.match(
+    /^[A-Za-z0-9`~!@#$%^&*|\\\'\";:\/?]{4,12}$/
+  );
   if (checkPassword === null) return false;
   return true;
 };
