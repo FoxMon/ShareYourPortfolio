@@ -313,7 +313,7 @@
 
 1. 해당 프로젝트를 clone 합니다.
 ```
-git clone https://kdt-gitlab.elice.io/ai_track/class05/web_project/team10.git
+git clone https://github.com/FoxMon/ShareYourPortfolio
 ```
 
 2. 프로젝트 실행에 필요한 패키지를 설치합니다.
